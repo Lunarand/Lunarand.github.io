@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Test Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #111827;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      text-align: center;
+      background: #1f2937;
+      padding: 30px;
+      border-radius: 12px;
+    }
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #22c55e;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 15px;
+      font-size: 18px;
+      color: #4ade80;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h1>Test Website</h1>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message"></p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "🎉 Congratulations! It's working!";
+    }
+  </script>
+
+</body>
+</html>
